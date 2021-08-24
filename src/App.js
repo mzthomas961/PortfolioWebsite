@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Bio from "./Bio"
+import Socials from "./Socials"
+import Projects from "./Projects"
 import './App.css';
 
 function App() {
+  ///DECLARING STATE
+  const [showBio,setShowBio] = useState(false);
+  const [showProjects,setShowProjects] =  useState(false);
+  const [showSocials,setShowSocials] = useState(false);
+
+  function bioHandler(){
+    setShowBio(!showBio)
+  }
+  function projectsHandler(){
+    setShowProjects(!showProjects)
+  }
+  function socialsHandler(){
+    setShowSocials(!showSocials)  
+}
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick ={bioHandler}n>about me</button>
+      <button onClick ={projectsHandler}n>my work</button>
+      <button onClick ={socialsHandler}n>get in touch</button>
+
+      {showBio ? <Bio/> : null} 
+      {showProjects ? <Projects/> : null} 
+      {showSocials ? <Socials/> : null} 
+
+
+
+
     </div>
   );
 }

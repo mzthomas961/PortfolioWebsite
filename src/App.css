@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+button {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family : inherit;
+  font-size: 1em;
+  outline: none;
+  border: none !important;
+  background-color: transparent;
+  color: whitesmoke;
+  align-items: center;
+}
+ul{
+  color: white;
+}
+p{
+  color: white;
+}
+body{
+  color:black
+}
+
+
