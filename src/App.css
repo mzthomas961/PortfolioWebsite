@@ -85,6 +85,6 @@ a[tabindex]:focus {
 .card-links{
   font-size: medium;
 }
-/* .card{
-  
-} */
+.card-text{
+  font-size: large;
+}

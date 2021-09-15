@@ -3,7 +3,7 @@ import Card from 'react-bootstrap/Card'
 
 
 
-function ProjectCard({frontend,backend,stack,title,}){
+function ProjectCard({frontend,backend,stack,title,summary}){
     console.log(backend)
     return(
         <Card className = 'box'style={{ width: '31rem' }} style={{flex: 1}} className="card">
@@ -12,8 +12,10 @@ function ProjectCard({frontend,backend,stack,title,}){
           <Card.Title className="card_title">
               {title}
               </Card.Title>
-          <Card.Text>
+          <Card.Text className="card-text">
             Tech Stack: {stack}<br />
+            <br />
+            {summary}
             
           </Card.Text>
         </Card.Body>
