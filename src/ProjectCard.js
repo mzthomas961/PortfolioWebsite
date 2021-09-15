@@ -1,22 +1,28 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Col from 'react-bootstrap/Col'
 
-function ProjectCard({github,stack,title,}){
+
+function ProjectCard({frontend,backend,stack,title,}){
+    console.log(backend)
     return(
-        <Card><Typography>
-            {title}
-            {stack}
-            {github}
-            </Typography>
-
-        </Card>
+        <Card className = 'box'style={{ width: '31rem' }} style={{flex: 1}}>
+        <Card.Img variant="light" src="holder.js/100px180?text=Image cap" />
+        <Card.Body>
+          <Card.Title className="card title">
+              {title}
+              </Card.Title>
+          <Card.Text>
+            Tech Stack: {stack}<br />
+            
+          </Card.Text>
+        </Card.Body>
+        <Card.Body>
+          <Card.Link href={frontend} >Front End </Card.Link>
+          {backend === "n/a" ? null:  <Card.Link href={backend}>Back end</Card.Link>}
+        </Card.Body>
+      </Card>
     )
 
 }

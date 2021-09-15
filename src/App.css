@@ -57,5 +57,18 @@ p{
 body{
   color:black
 }
+.card-title {
+  color: white;
+}
+a {   
+  color: white;   
+}
 
+a:active {
+  color: blue;
+}
 
+a[tabindex]:focus {
+  color:blue;
+  outline: none;
+}

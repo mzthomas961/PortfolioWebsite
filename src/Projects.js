@@ -1,5 +1,8 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
+import { Container, Row,Col } from "react-bootstrap";
+
+
 
 function Projects(){
     const data = [
@@ -7,25 +10,29 @@ function Projects(){
         "id":1, 
         "title": "Ruby CLI",
         "stack": "Ruby",
-        "Github": "https://github.com/mzthomas961/Ruby-CLI"
+        "frontend": "https://github.com/mzthomas961/Ruby-CLI",
+        "backend": "n/a"
     },
     {
         "id":2, 
         "title": "Transparent Travel",
         "stack": "Ruby on Rails",
-        "Github": "https://github.com/mzthomas96/TransparentTravel"
+        "frontend": "https://github.com/mzthomas96/TransparentTravel",
+        "backend" : "n/a"
     },
     {
         "id":3, 
         "title": "Bean Tracker",
         "stack": "Javascript and Ruby on Rails",
-        "Github": "https://github.com/mzthomas961/BeanTracker-Frontend(Frontend) + https://github.com/mzthomas961/BeanTracker-Backend(Backend)"
+        "frontend": "https://github.com/mzthomas961/BeanTracker-Frontend", 
+        "backend":"https://github.com/mzthomas961/BeanTracker-Backend"
     },
     {
         "id":4, 
         "title": "Git Right Kitchen",
         "stack": "React and Ruby on Rails",
-        "Github": "https://github.com/mzthomas961/Git-Right-Recipes-Frontend(Frontend)+ https://github.com/mzthomas961/Git-Right-Recipes-Backend(Backend)"
+        "frontend": "https://github.com/mzthomas961/Git-Right-Recipes-Frontend",
+        "backend":"https://github.com/mzthomas961/Git-Right-Recipes-Backend"
     }
 
     ]
@@ -35,13 +42,24 @@ function Projects(){
             key = {project.id}
             title = {project.title}
             stack = {project.stack}
-            github = {project.github}
+            frontend = {project.frontend}
+            backend = {project.backend}
             />
         )
     })
 
     return (
-       <div>{projectObjects}</div>
+       <div>
+
+<Container style={{display: 'flex', flexDirection: 'row'}} className="box">
+<Row xs="1" md="2">
+      <Col xs = "1" md = "2">
+    {projectObjects}
+    </Col>
+  </Row>
+</Container>
+        </div>
+      
     )
 }
 export default Projects
