@@ -1,6 +1,9 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import { Container, Row,Col } from "react-bootstrap";
+import CardDeck from 'react-bootstrap/Card'
+
+
 
 
 
@@ -33,7 +36,15 @@ function Projects(){
         "stack": "React and Ruby on Rails",
         "frontend": "https://github.com/mzthomas961/Git-Right-Recipes-Frontend",
         "backend":"https://github.com/mzthomas961/Git-Right-Recipes-Backend"
+    },
+    {
+        "id":5, 
+        "title": "Feed Your Neighbor",
+        "stack": "React and Ruby on Rails",
+        "frontend": "https://github.com/mzthomas961/Feed-Your-Neighbor-Frontend",
+        "backend":"https://github.com/mzthomas961/Feed-Your-Neighbor-Backend"
     }
+    
 
     ]
     const projectObjects = data.map((project) => {
@@ -52,11 +63,13 @@ function Projects(){
        <div>
 
 <Container style={{display: 'flex', flexDirection: 'row'}} className="box">
-<Row xs="1" md="2">
-      <Col xs = "1" md = "2">
+<CardDeck  style={{
+          display: "grid",
+          gridTemplateColumns: "390px 390px 390px",
+          margin: "15px 15px 15px 15px",
+        }}>
     {projectObjects}
-    </Col>
-  </Row>
+    </CardDeck>
 </Container>
         </div>
       
