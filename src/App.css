@@ -72,3 +72,19 @@ a[tabindex]:focus {
   color:blue;
   outline: none;
 }
+.navbar-btn{
+  font-size:xx-large
+}
+
+.bioText{
+  font-size: 2rem;
+}
+.card-title{
+  font-size: xx-large;
+}
+.card-links{
+  font-size: medium;
+}
+/* .card{
+  
+} */

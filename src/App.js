@@ -31,9 +31,9 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick ={bioHandler}n>about me</button>
-      <button onClick ={projectsHandler}n>my work</button>
-      <button onClick ={socialsHandler}n>get in touch</button>
+      <button className="navbar-btn" onClick ={bioHandler}n>about me</button >
+      <button className="navbar-btn"  onClick ={projectsHandler}n>my work</button>
+      <button className="navbar-btn"  onClick ={socialsHandler}n>get in touch</button>
 
       {showBio ? <Bio/> : null} 
       {showProjects ? <Projects/> : null} 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import { Container, Row,Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import CardDeck from 'react-bootstrap/Card'
 
 
