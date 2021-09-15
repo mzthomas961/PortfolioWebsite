@@ -12,12 +12,20 @@ function App() {
 
   function bioHandler(){
     setShowBio(!showBio)
+    setShowProjects(false)
+    setShowSocials(false)  
   }
   function projectsHandler(){
     setShowProjects(!showProjects)
+    setShowBio(false)
+    setShowSocials(false)  
   }
+
+  
   function socialsHandler(){
     setShowSocials(!showSocials)  
+    setShowProjects(false)
+    setShowBio(false)
 }
 
 
