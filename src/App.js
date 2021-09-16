@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   ///DECLARING STATE
-  const [showBio,setShowBio] = useState(false);
+  const [showBio,setShowBio] = useState(true);
   const [showProjects,setShowProjects] =  useState(false);
   const [showSocials,setShowSocials] = useState(false);
 

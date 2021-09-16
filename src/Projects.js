@@ -15,7 +15,8 @@ function Projects(){
         "stack": "Ruby",
         "frontend": "https://github.com/mzthomas961/Ruby-CLI",
         "backend": "n/a",
-        "summary": "Command Line Interface built entirely  in Ruby, meant to simulate a fully functioing forum."
+        "summary": "Command Line Interface built entirely  in Ruby, meant to simulate a fully functioing forum.",
+        "image": "https://i.imgur.com/uHceRe7.png"
 
     },
     {
@@ -24,7 +25,8 @@ function Projects(){
         "stack": "Ruby on Rails",
         "frontend": "https://github.com/mzthomas96/TransparentTravel",
         "backend" : "n/a",
-        "summary": "Mock web interface for travel agents to bpok vacations"
+        "summary": "Mock web interface for travel agents to bpok vacations",
+        "image": "https://i.imgur.com/KwIQZuj.png"
     },
     {
         "id":3, 
@@ -32,7 +34,9 @@ function Projects(){
         "stack": "Javascript and Ruby on Rails",
         "frontend": "https://github.com/mzthomas961/BeanTracker-Frontend", 
         "backend":"https://github.com/mzthomas961/BeanTracker-Backend",
-        "summary": "Fully functioning Coffeeshop web-app."
+        "summary": "Fully functioning Coffeeshop web-app.",
+        "image": "https://i.imgur.com/emeO5PR.png"
+
     },
     {
         "id":4, 
@@ -40,7 +44,9 @@ function Projects(){
         "stack": "React and Ruby on Rails",
         "frontend": "https://github.com/mzthomas961/Git-Right-Recipes-Frontend",
         "backend":"https://github.com/mzthomas961/Git-Right-Recipes-Backend",
-        "summary": "React app to find and save recipes"
+        "summary": "React app to find and save recipes",
+        "image": "http://cdn.shopify.com/s/files/1/1061/1924/products/24_grande.png?v=1571606116"
+
     },
     {
         "id":5, 
@@ -48,7 +54,9 @@ function Projects(){
         "stack": "React and Ruby on Rails",
         "frontend": "https://github.com/mzthomas961/Feed-Your-Neighbor-Frontend",
         "backend":"https://github.com/mzthomas961/Feed-Your-Neighbor-Backend",
-        "summary": "Social network to share/trade homemade food"
+        "summary": "Social network to share/trade homemade food",
+        "image": "https://i.imgur.com/ZsJELFR.png"
+
     },
     {
         "id":6, 
@@ -56,7 +64,9 @@ function Projects(){
         "stack": "Python",
         "frontend": "https://github.com/mzthomas961/MovieBot",
         "backend":"n/a",
-        "summary": "Discord bot that gives random recommendations based on user input. Can filteer by genre and cast"
+        "summary": "Discord bot that gives random recommendations based on user input. Can filteer by genre and cast",
+        "image": "https://i.gadgets360cdn.com/large/discord_main_website_1615986172916.jpg"
+
 
     }
     
@@ -71,6 +81,7 @@ function Projects(){
             frontend = {project.frontend}
             backend = {project.backend}
             summary = {project.summary}
+            image = {project.image}
             />
         )
     })

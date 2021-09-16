@@ -3,11 +3,11 @@ import Card from 'react-bootstrap/Card'
 
 
 
-function ProjectCard({frontend,backend,stack,title,summary}){
-    console.log(backend)
+function ProjectCard({frontend,backend,stack,title,summary,image}){
+    console.log(image)
     return(
         <Card className = 'box'style={{ width: '31rem' }} style={{flex: 1}} className="card">
-        <Card.Img variant="light" src="holder.js/100px180?text=Image cap" />
+        <Card.Img src={image} className="card-image" width="135" height="125"/>
         <Card.Body>
           <Card.Title className="card_title">
               {title}
