@@ -16,7 +16,7 @@ function Projects(){
         "frontend": "https://github.com/mzthomas961/Ruby-CLI",
         "backend": "n/a",
         "summary": "Command Line Interface built entirely  in Ruby, meant to simulate a fully functioing forum.",
-        "image": "https://i.imgur.com/uHceRe7.png"
+        "image": "/images/CLI.png"
 
     },
     {
@@ -26,7 +26,7 @@ function Projects(){
         "frontend": "https://github.com/mzthomas96/TransparentTravel",
         "backend" : "n/a",
         "summary": "Mock web interface for travel agents to bpok vacations",
-        "image": "https://i.imgur.com/KwIQZuj.png"
+        "image": "/images/TT.png"
     },
     {
         "id":3, 
@@ -35,7 +35,7 @@ function Projects(){
         "frontend": "https://github.com/mzthomas961/BeanTracker-Frontend", 
         "backend":"https://github.com/mzthomas961/BeanTracker-Backend",
         "summary": "Fully functioning Coffeeshop web-app.",
-        "image": "https://i.imgur.com/emeO5PR.png"
+        "image": "/images/BeanTracker.png"
 
     },
     {
@@ -55,7 +55,7 @@ function Projects(){
         "frontend": "https://github.com/mzthomas961/Feed-Your-Neighbor-Frontend",
         "backend":"https://github.com/mzthomas961/Feed-Your-Neighbor-Backend",
         "summary": "Social network to share/trade homemade food",
-        "image": "https://i.imgur.com/ZsJELFR.png"
+        "image": "/images/FYN.png"
 
     },
     {
