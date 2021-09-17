@@ -87,7 +87,7 @@ function Projects(){
     })
 
     return (
-       <div>
+       <div className="projects-div">
 
 <Container style={{display: 'flex', flexDirection: 'row'}} className="box">
 <CardDeck  style={{
