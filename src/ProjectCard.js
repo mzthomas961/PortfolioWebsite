@@ -1,30 +1,53 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card'
+import ProjectCard from './ProjectCard';
+import { Container } from "react-bootstrap";
+import CardDeck from 'react-bootstrap/Card'
 
+function Projects(){
+    const data = [
+        {
+        "id":1, 
+        "title": "Ruby CLI",
+        "stack": "Ruby",
+        "frontend": "https://github.com/mzthomas961/Ruby-CLI",
+        "backend": "n/a",
+        "summary": "Command Line Interface built entirely  in Ruby, meant to simulate a fully functioing forum.",
+        "image": "/images/CLI.png"
 
+    },
+    {
+        "id":2, 
+        "title": "Transparent Travel",
+        "stack": "Ruby on Rails",
+        "frontend": "https://github.com/mzthomas96/TransparentTravel",
+        "backend" : "n/a",
+        "summary": "Mock web interface for travel agents to bpok vacations",
+        "image": "/images/TT.png"
+    },
+    // ... more project data
+    ]
+    const projectObjects = data.map((project) => {
+        return(
+            <ProjectCard
+            key = {project.id}
+            title = {project.title}
+            stack = {project.stack}
+            frontend = {project.frontend}
+            backend = {project.backend}
+            summary = {project.summary}
+            image = {project.image}
+            />
+        )
+    })
 
-function ProjectCard({frontend,backend,stack,title,summary,image}){
-    console.log(image)
-    return(
-        <Card className = 'box'style={{ width: '31rem' }} style={{flex: 1}} className="card">
-        <Card.Img src={image} className="card-image" width="135" height="125"/>
-        <Card.Body>
-          <Card.Title className="card_title">
-              {title}
-              </Card.Title>
-          <Card.Text className="card-text">
-            Tech Stack: {stack}<br />
-            <br />
-            {summary}
-            
-          </Card.Text>
-        </Card.Body>
-        <Card.Body className="card-links">
-          <Card.Link href={frontend} >Front End </Card.Link>
-          {backend === "n/a" ? null:  <Card.Link href={backend}>Back end</Card.Link>}
-        </Card.Body>
-      </Card>
+    return (
+       <div className="projects-div">
+        <Container>
+          <CardDeck className="card-deck">
+            {projectObjects}
+          </CardDeck>
+        </Container>
+       </div>
     )
-
 }
-export default ProjectCard 
+export default Projects;

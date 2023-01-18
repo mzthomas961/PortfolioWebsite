@@ -1,102 +1,82 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-btn {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-btn:hover {
+  background-color: #ff8c1a;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-deck{
+  margin: 20px;
+  text-align: center;
+}
+
+.card-image{
+  width:100%;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.card_title{
+  color:#ff6600;
+  font-size:1.5rem;
+  font-weight:bold;
+  text-align: center;
+}
+
+.card-text{
+  color:black;
+  font-size:1.2rem;
+  text-align: center;
+}
+
+.card-links{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.card-links a{
+  color: #ff6600;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-button {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  font-family : inherit;
-  font-size: 1em;
-  outline: none;
-  border: none !important;
-  background-color: transparent;
-  color: whitesmoke;
-  align-items: center;
-}
-ul{
-  color: white;
-}
-p{
-  color: white;
-}
-body{
-  color:blackzz
-}
-.card-title {
-  color: white;
-}
-a {   
-  color: white;   
-}
-
-a:active {
-  color: blue;
-}
-
-a[tabindex]:focus {
-  color:blue;
-  outline: none;
-}
-.navbar-btn{
-  font-size:xx-large
+.card-links a:hover {
+  color: #ff8c1a;
+  text-decoration: underline;
 }
 
 .bioText{
-  font-size: 2rem;
+  text-align:center;
+  margin-top: 20px;
+  font-size:1.2rem;
+  font-weight: normal;
 }
-.card-title{
-  font-size: xx-large;
-}
-.card-links{
-  font-size: medium;
-}
-.card-text{
-  font-size: large;
-} 
-.bio{
-  border-color: white;
-  border-style: solid;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 35em
 
+.bio a{
+  color: #ff6600;
+  text-decoration: none;
 }
-.link-text{
-  font-size: xx-large 
+
+.bio a:hover {
+  color: #ff8c1a;
+  text-decoration: underline;
 }
